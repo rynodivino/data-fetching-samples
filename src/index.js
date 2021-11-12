@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Grommet, grommet } from 'grommet'
+// import { hpe } from 'grommet-theme-hpe'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Grommet theme={grommet} themeMode='dark'>
+      <App />
+    </Grommet>
   </React.StrictMode>,
   document.getElementById('root')
 );
